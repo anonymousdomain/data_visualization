@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 inputs=range(1,1001)
-values=[x**2 for x in inputs]
+values=[x**3 for x in inputs]
 #add style
 plt.style.use('seaborn')
 
@@ -16,4 +16,7 @@ ax.set_ylabel('square values',fontsize=14)
 ax.tick_params(axis='both',which='major',labelsize=10)
 #expand the axis x from 0 to 1100 and y from 0to 1100000
 ax.axis([0,1100,0,1100000])
-plt.show()
+plt.savefig('img\cubics_scatter.png',bbox_inches='tight')
+
+
+
