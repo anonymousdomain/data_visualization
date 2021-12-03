@@ -17,9 +17,10 @@ with open(filename) as f:
 
 plt.style.use('seaborn')
 fig,ax=plt.subplots()
-ax.plot(dates,highs,c='red')
-ax.plot(dates,lows,c='blue')
+ax.plot(dates,highs,c='red',alpha=0.5)
+ax.plot(dates,lows,c='blue',alpha=0.5)
 
+ax.fill_between(dates,highs,lows,facecolor='blue',alpha=0.1)
 plt.title('daily high temprature',fontsize=16)
 plt.xlabel('dates',fontsize=16)
 #avoid datetime overlaping in the label
