@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
+
+inputs=[1,2,3,4,5]
+values=[1,4,9,16,25]
 #add style
 plt.style.use('seaborn')
 
 fig,ax=plt.subplots()
-ax.scatter(2,4,s=100)
+ax.scatter(inputs,values,s=100)
 
 #set title
 ax.set_title('square_numbers',fontsize=24)
