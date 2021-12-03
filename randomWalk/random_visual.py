@@ -9,4 +9,4 @@ fig ,ax=plt.subplots()
 
 ax.scatter(rw.x_values,rw.y_values,c=rw.y_values,cmap=plt.cm.Reds,s=10)
 
-plt.show()
+plt.savefig('img\\random_walk.png',bbox_inches='tight')
