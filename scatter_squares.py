@@ -1,17 +1,19 @@
 import matplotlib.pyplot as plt
 
-inputs=[1,2,3,4,5]
-values=[1,4,9,16,25]
+inputs=range(1,1001)
+values=[x**2 for x in inputs]
 #add style
 plt.style.use('seaborn')
 
 fig,ax=plt.subplots()
-ax.scatter(inputs,values,s=100)
+ax.scatter(inputs,values,c=values,cmap=plt.cm.Blues,s=5)
 
 #set title
 ax.set_title('square_numbers',fontsize=24)
 ax.set_xlabel('values',fontsize=14)
 ax.set_ylabel('square values',fontsize=14)
 
-ax.tick_params(axis='both',which='major',labelsize=14)
+ax.tick_params(axis='both',which='major',labelsize=10)
+#expand the axis x from 0 to 1100 and y from 0to 1100000
+ax.axis([0,1100,0,1100000])
 plt.show()
