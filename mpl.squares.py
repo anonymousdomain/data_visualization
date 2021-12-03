@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 inputs=[1,2,3,4,5]
 squares=[1,4,9,16,25]
 
+#add style 
+plt.style.use('seaborn')
 fig ,ax=plt.subplots()
 ax.plot(inputs,squares,linewidth=2)
 
