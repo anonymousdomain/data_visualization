@@ -8,6 +8,7 @@ data=[{
     'type':'scattergeo',
     'lon':d.lons,
     'lat':d.lats,
+    'text':d.hover_titles,
     'marker':{
         'size':[5*mag for mag in d.mags],
         'color':d.mags,
