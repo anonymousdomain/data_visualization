@@ -9,10 +9,18 @@ readable_file='mapping_global_data_set\data\readable_eq_data.json'
     
 all_eq_dict=all_eq_data['features']
 
-mags=[]
+mags,lons,lats=[],[],[]
 
 for eq_dict in all_eq_dict:
     
     mag=eq_dict['properties']['mag']
+    lon=eq_dict['geometry']['coordinates'][0]
+    lat=eq_dict['geometry']['coordinates'][1]
     mags.append(mag)
-print(mags[:6])
+    lons.append(lon)
+    lats.append(lat)
+
+print(mags[:10],lons[:5],lats[:5])
+
+ 
+    
