@@ -30,4 +30,5 @@ ax.plot(death.dates, death.highs, c='blue', alpha=0.5)
 
 ax.fill_between(dates, highs, death.highs, facecolor='blue', alpha=0.1)
 
-plt.show()
+#plt.show()
+plt.savefig('img\\temp_diff_between_death_vally_dashin_highs.png')
