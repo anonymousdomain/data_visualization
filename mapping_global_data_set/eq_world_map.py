@@ -17,7 +17,7 @@ data=[{
         'colorbar':{'title':'Magnitude'}
     }
 }]
-my_layout=Layout(title='Global Earthquaks')
+my_layout=Layout(title=d.all_eq_title)
 
 fig={'data':data,'layout':my_layout}
 
